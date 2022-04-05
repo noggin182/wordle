@@ -1,0 +1,24 @@
+@use '../../../colors';
+
+nw-tile {
+    margin: 2px 2px;
+    border: 2px solid colors.$tile-background;
+    display: inline-block;
+    width: 2ch;
+    height: 2ch;
+    line-height: 2ch;
+    text-align: center;
+    padding: 4px;
+
+    background-color: colors.$tile-background;
+
+    &:first-of-type {
+        border-top-left-radius: 5px;
+        border-bottom-left-radius: 5px;
+    }
+
+    &:last-of-type {
+        border-top-right-radius: 5px;
+        border-bottom-right-radius: 5px;
+    }
+}

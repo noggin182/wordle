@@ -1,0 +1,6 @@
+<div *ngFor="let row of keyCaps; let lastRow = last; let index = index" style="display: flex; justify-content: center;">
+    
+    <nw-key *ngFor="let key of row" [key]="key">{{key}}</nw-key>
+    <!-- <nw-key *ngIf="index == 1" class="nw-key">⏎</nw-key>
+    <nw-key *ngIf="lastRow" class="nw-key--wide">⌫</nw-key> -->
+</div>

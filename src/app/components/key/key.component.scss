@@ -1,0 +1,22 @@
+@use '../../../colors';
+
+nw-key {
+    text-transform: uppercase;
+    background-color: colors.$key-background;
+    margin: 2px;
+    padding: 2px;
+    width: 2ch;
+    height: 3ch;
+    line-height: 3.2ch;
+    text-align: center;
+    border-radius: 5px;
+    
+    
+    &:before {
+
+    }
+
+    &.nw-key--wide {
+        width: calc(4ch + 2px);
+    }
+}
